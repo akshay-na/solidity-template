@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const { execSync } = require("child_process");
+const readline = require("readline");
 
 const runCommand = (command) => {
   try {
@@ -12,18 +13,68 @@ const runCommand = (command) => {
   return true;
 };
 
+let gitCheckoutCommand;
+
 const repoName = process.argv[2];
-const gitCheckoutCommand = `git clone --depth 1 https://github.com/akshay-na/solidity-project-hardhat-template ${repoName}`;
-const installDepsCommand = `cd ${repoName} && npm install`;
 
-console.log(`Cloning a repository with name ${repoName}`);
-const checkedOut = runCommand(gitCheckoutCommand);
-if (!checkedOut) process.exit(-1);
+async function askQuestion() {
+  const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+  });
 
-console.log(`Installing dependencies for  ${repoName}`);
-const installDeps = runCommand(installDepsCommand);
-if (!installDeps) process.exit(-1);
+  return new Promise((resolve) =>
+    rl.question(
+      "\nPlease choose the template you want to use:\n\n1. Hardhat Template\n2. Truffle Template\n\nEnter your option: ",
+      (ans) => {
+        try {
+          rl.close();
+          resolve(parseInt(ans));
+        } catch (e) {
+          rl.close();
+          console.error("Invalid option");
+          init().then(() => {
+            runScript();
+          });
+        }
+      }
+    )
+  );
+}
 
-console.log(
-  "Congratulations! The template is ready to proceed with the development"
-);
+const init = async () => {
+  const ans = await askQuestion();
+
+  switch (ans) {
+    case 1:
+      gitCheckoutCommand = `git clone --depth 1 https://github.com/akshay-na/solidity-project-hardhat-template ${repoName}`;
+      break;
+    case 2:
+      gitCheckoutCommand = `git clone --depth 1 https://github.com/akshay-na/solidity-project-truffle-template ${repoName}`;
+      break;
+    default:
+      console.error("Invalid option");
+      init().then(() => {
+        runScript();
+      });
+  }
+};
+
+const runScript = () => {
+  // const installDepsCommand = `cd ${repoName} && npm install && rm .git/`;
+  const installDepsCommand = `cd ${repoName} && rm -rf .git/`;
+
+  console.log(`\nCloning a repository with name ${repoName}`);
+  const checkedOut = runCommand(gitCheckoutCommand);
+  if (!checkedOut) process.exit(-1);
+
+  console.log(`\nInstalling dependencies for ${repoName}`);
+  const installDeps = runCommand(installDepsCommand);
+  if (!installDeps) process.exit(-1);
+
+  console.log("\nCongratulations! The template is ready to use");
+};
+
+init().then(() => {
+  runScript();
+});
