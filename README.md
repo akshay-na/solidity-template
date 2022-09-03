@@ -134,13 +134,13 @@ Project Link: [https://github.com/akshay-na/solidity-template](https://github.co
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/akshay-na/solidity-template.svg?style=for-the-badge
 [contributors-url]: https://github.com/akshay-na/solidity-template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/akshay-na/solidity-template.svg?style=for-the-badge
 [forks-url]: https://github.com/akshay-na/solidity-template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/akshay-na/solidity-template.svg?style=for-the-badge
 [stars-url]: https://github.com/akshay-na/solidity-template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/akshay-na/solidity-template.svg?style=for-the-badge
 [issues-url]: https://github.com/akshay-na/solidity-template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/akshay-na/solidity-template.svg?style=for-the-badge
 [license-url]: https://github.com/akshay-na/solidity-template/blob/master/LICENSE.txt
