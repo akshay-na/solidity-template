@@ -61,8 +61,7 @@ const init = async () => {
 };
 
 const runScript = () => {
-  // const installDepsCommand = `cd ${repoName} && npm install && rm .git/`;
-  const installDepsCommand = `cd ${repoName} && rm -rf .git/`;
+  const installDepsCommand = `cd ${repoName} && npm install && rm -rf .git/`;
 
   console.log(`\nCloning a repository with name ${repoName}`);
   const checkedOut = runCommand(gitCheckoutCommand);
