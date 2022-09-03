@@ -1,0 +1,11 @@
+{
+  "name": "solidity-template",
+  "version": "1.0.0",
+  "description": "Creates Hardhat/Truffle dev environment for developing smart contract using Solidity",
+  "bin": "./bin/cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Akshay N",
+  "license": "MIT"
+}
