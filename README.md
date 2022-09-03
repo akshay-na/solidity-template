@@ -49,7 +49,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[npm package link](https://example.com)
+[npm package](https://www.npmjs.com/package/solidity-template)
 
 There are many great solidity templates available on GitHub; however, I didn't
 find one that really suited my needs so I created this enhanced one.
