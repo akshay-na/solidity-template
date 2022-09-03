@@ -4,13 +4,9 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
-
-
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-
 
   <h3 align="center">Solidity Template</h3>
 
@@ -25,8 +21,6 @@
     <a href="https://github.com/akshay-na/solidity-template/issues">Request Feature</a>
   </p>
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -52,8 +46,6 @@
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
@@ -76,16 +68,10 @@ issue. Thanks to all the people have contributed to expanding this template!
 1. [Hardhat Template Repo](https://github.com/akshay-na/solidity-project-hardhat-template)
 2. [Truffle Template Repo](https://github.com/akshay-na/solidity-project-truffle-template)
 
-
-
-
-
 ### Built With
-
 
 * Node js
 * npm
-
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -94,7 +80,8 @@ Please install the package globally so that you can get the template from
 anywhere
 
 To get a local copy up and running follow these simple example steps.
-```sh
+
+  ```sh
   git clone https://github.com/akshay-na/solidity-template
   cd solidity-template
   npm install
@@ -106,6 +93,7 @@ Make sure that the following prerequisites is installed before using the package
 
 * Node Js
 * npm
+
   ```sh
   npm install npm@latest -g
   ```
@@ -113,13 +101,10 @@ Make sure that the following prerequisites is installed before using the package
 ### Installation
 
 1. Install the package globally
+
    ```sh
    npm i -g solidity-template
    ```
-
-
-
-
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -135,16 +120,10 @@ When you run the above command, you will be prompted to select the template.
 Select your option and the package will clone and install dependencies of that
 particular template.
 
-
-
 <!-- LICENSE -->
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-
-
-
 
 <!-- CONTACT -->
 ## Contact
@@ -152,9 +131,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 Your Name - Akshay N
 
 Project Link: [https://github.com/akshay-na/solidity-template](https://github.com/akshay-na/solidity-template)
-
-
-
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
