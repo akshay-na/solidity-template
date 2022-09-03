@@ -1,7 +1,7 @@
 {
   "name": "solidity-template",
-  "version": "1.0.3",
-  "description": "Creates Hardhat/Truffle dev environment for developing smart contract using Solidity",
+  "version": "1.0.4",
+  "description": "Create Hardhat/Truffle template with pre-configured network and plugins for smart contract development using solidity",
   "bin": "./bin/cli.js",
   "homepage": "https://github.com/akshay-na/solidity-template#readme",
   "repository": {
